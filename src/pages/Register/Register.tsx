@@ -42,7 +42,7 @@ export default function Register() {
       onSuccess: (data) => {
         setIsAuthenticated(true)
         setProfile(data.data.data.user)
-        toast.success('Đăng Ký Thành Công. Vui lòng đăng nhập.')
+        toast.success('Đăng Ký Thành Công.')
         navigate('/')
       },
       onError: (error) => {
