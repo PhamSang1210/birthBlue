@@ -65,6 +65,7 @@ export class Http {
           setRefreshTokenToLS(this.refreshToken)
           setProfileToLS(data.data.user)
         } else if (url === URL_LOGOUT) {
+          toast.success('Đăng Xuất Thành Công.')
           this.accessToken = ''
           this.refreshToken = ''
           clearLS()
